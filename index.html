@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portofolio [Nama Lengkap], [Bidang Keahlian].">
+  <title>[Nama Lengkap] — Portofolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <!-- Script Netlify Identity untuk Autentikasi Admin CMS -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-row">
+      <a class="brand" href="#beranda">[Nama Lengkap]</a>
+      <button class="menu-toggle" id="menu-toggle" type="button"
+        aria-controls="primary-nav" aria-expanded="false"
+        aria-label="Buka menu">☰</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="beranda" class="wrap hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">PORTOFOLIO / PROFIL PROFESIONAL</p>
+        <h1 id="hero-title">[Nama Lengkap]</h1>
+        <p class="hero-role">[Bidang Keahlian]</p>
+        <p class="lead">[Tulis ringkasan pendek tentang pendekatan dan keahlian Anda.]</p>
+        <div class="actions">
+          <a class="button button-primary" href="#proyek">Lihat Proyek</a>
+          <a class="button button-outline" href="[URL_CV_ANDA]"
+            id="cv-link" target="_blank" rel="noopener noreferrer">Lihat / Unduh CV</a>
+        </div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Placeholder foto profil">
+        <span>FOTO PROFIL ANDA</span>
+      </div>
+    </section>
+
+    <section id="tentang" class="section section-soft" aria-labelledby="about-title">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">01 / TENTANG SAYA</p>
+          <h2 id="about-title">Sedikit tentang cara saya berkarya.</h2>
+          <p>[Tulis latar belakang profesional, perspektif, dan bidang yang Anda tekuni.]</p>
+        </div>
+        <div class="stack">
+          <div class="rule-block">
+            <h3>Prinsip kerja</h3>
+            <p>[Jelaskan prinsip yang memandu pekerjaan Anda.]</p>
+          </div>
+          <div class="rule-block">
+            <h3>Di luar pekerjaan</h3>
+            <p>[Ceritakan hobi atau minat Anda.]</p>
+          </div>
+          <div class="rule-block">
+            <h3>Pendidikan</h3>
+            <div class="timeline-item">
+              <small>[TAHUN — TAHUN]</small>
+              <p>[Gelar / Program Studi] · [Institusi]</p>
+            </div>
+            <div class="timeline-item">
+              <small>[TAHUN]</small>
+              <p>[Kursus / Sertifikasi] · [Penyelenggara]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyek" class="section wrap" aria-labelledby="projects-title">
+      <p class="eyebrow">02 / KARYA TERPILIH</p>
+      <h2 id="projects-title">Pilihan proyek.</h2>
+      <p>Enam slot contoh. Ganti uraian dengan pekerjaan yang benar-benar Anda lakukan.</p>
+      <div class="filters" role="group" aria-label="Filter proyek">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">Semua</button>
+        <button class="filter" type="button" data-filter="identitas" aria-pressed="false">Identitas</button>
+        <button class="filter" type="button" data-filter="digital" aria-pressed="false">Digital</button>
+        <button class="filter" type="button" data-filter="strategi" aria-pressed="false">Strategi</button>
+      </div>
+      <div class="project-grid">
+        <article class="card project" data-category="identitas">
+          <div class="project-art art-one" aria-hidden="true">01</div>
+          <div class="card-body">
+            <p class="eyebrow">IDENTITAS · CONTOH</p>
+            <h3>[Proyek Identitas Editorial]</h3>
+            <p>[Ringkasan tantangan dan solusi visual.]</p>
+            <button class="text-button case-open" type="button" data-case="case-1">Lihat Studi Kasus →</button>
+          </div>
+        </article>
+        <article class="card project" data-category="digital">
+          <div class="project-art art-two" aria-hidden="true">02</div>
+          <div class="card-body">
+            <p class="eyebrow">DIGITAL · CONTOH</p>
+            <h3>[Proyek Pengalaman Digital]</h3>
+            <p>[Ringkasan produk atau pengalaman pengguna.]</p>
+            <button class="text-button case-open" type="button" data-case="case-2">Lihat Studi Kasus →</button>
+          </div>
+        </article>
+        <article class="card project" data-category="identitas">
+          <div class="project-art art-three" aria-hidden="true">03</div>
+          <div class="card-body">
+            <p class="eyebrow">IDENTITAS · CONTOH</p>
+            <h3>[Proyek Desain Kemasan]</h3>
+            <p>[Ringkasan konsep dan penerapan kemasan.]</p>
+            <button class="text-button case-open" type="button" data-case="case-3">Lihat Studi Kasus →</button>
+          </div>
+        </article>
+        <article class="card project" data-category="strategi">
+          <div class="project-art art-four" aria-hidden="true">04</div>
+          <div class="card-body">
+            <p class="eyebrow">STRATEGI · CONTOH</p>
+            <h3>[Proyek Strategi Kreatif]</h3>
+            <p>[Ringkasan riset dan keputusan kreatif.]</p>
+            <button class="text-button case-open" type="button" data-case="case-4">Lihat Studi Kasus →</button>
+          </div>
+        </article>
+        <article class="card project" data-category="digital">
+          <div class="project-art art-five" aria-hidden="true">05</div>
+          <div class="card-body">
+            <p class="eyebrow">DIGITAL · CONTOH</p>
+            <h3>[Proyek Kampanye Digital]</h3>
+            <p>[Ringkasan konsep kampanye lintas kanal.]</p>
+            <button class="text-button case-open" type="button" data-case="case-5">Lihat Studi Kasus →</button>
+          </div>
+        </article>
+        <article class="card project" data-category="strategi">
+          <div class="project-art art-six" aria-hidden="true">06</div>
+          <div class="card-body">
+            <p class="eyebrow">STRATEGI · CONTOH</p>
+            <h3>[Proyek Konsultasi Konsep]</h3>
+            <p>[Ringkasan kebutuhan dan arah konsep.]</p>
+            <button class="text-button case-open" type="button" data-case="case-6">Lihat Studi Kasus →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="pengalaman" class="section section-soft" aria-labelledby="experience-title">
+      <div class="wrap">
+        <p class="eyebrow">03 / PENGALAMAN & KETERAMPILAN</p>
+        <h2 id="experience-title">Fondasi di balik pekerjaan.</h2>
+        <div class="split">
+          <div>
+            <h3>Perjalanan profesional</h3>
+            <div class="timeline-item">
+              <small>[PERIODE TERKINI]</small>
+              <h3>[Posisi / Peran]</h3>
+              <p>[Organisasi / Jenis Kolaborasi] · [Pencapaian terverifikasi]</p>
+            </div>
+            <div class="timeline-item">
+              <small>[PERIODE SEBELUMNYA]</small>
+              <h3>[Posisi / Peran Sebelumnya]</h3>
+              <p>[Organisasi / Jenis Kolaborasi] · [Kontribusi nyata]</p>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="rule-block">
+              <h3>Hard skill</h3>
+              <p>[Keahlian teknis] · [Perangkat kerja] · [Metodologi]</p>
+            </div>
+            <div class="rule-block">
+              <h3>Soft skill</h3>
+              <p>[Komunikasi] · [Kolaborasi] · [Pemecahan masalah]</p>
+            </div>
+          </div>
+        </div>
+        <h3 class="process-heading">Cara saya bekerja</h3>
+        <div class="process-grid">
+          <div class="card process-card"><small>01</small><h3>Discovery</h3><p>Memahami konteks dan tujuan.</p></div>
+          <div class="card process-card"><small>02</small><h3>Strategy</h3><p>Menentukan arah dan prioritas.</p></div>
+          <div class="card process-card"><small>03</small><h3>Execution</h3><p>Mewujudkan solusi bersama.</p></div>
+          <div class="card process-card"><small>04</small><h3>Delivery</h3><p>Menyerahkan hasil dan panduan.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan" class="section wrap" aria-labelledby="services-title">
+      <p class="eyebrow">04 / LAYANAN</p>
+      <h2 id="services-title">Ruang untuk berkolaborasi.</h2>
+      <div class="service-grid">
+        <article class="card service-card">
+          <small>01 / LAYANAN</small><h3>[Layanan Identitas]</h3>
+          <p>[Jelaskan manfaat dan cakupan layanan identitas.]</p>
+          <a href="#kontak" class="button button-outline">Diskusikan Proyek</a>
+        </article>
+        <article class="card service-card">
+          <small>02 / LAYANAN</small><h3>[Layanan Digital]</h3>
+          <p>[Jelaskan produk atau pengalaman digital yang dapat Anda kerjakan.]</p>
+          <a href="#kontak" class="button button-outline">Diskusikan Proyek</a>
+        </article>
+        <article class="card service-card">
+          <small>03 / LAYANAN</small><h3>[Layanan Strategi]</h3>
+          <p>[Jelaskan pendekatan strategi yang Anda tawarkan.]</p>
+          <a href="#kontak" class="button button-outline">Diskusikan Proyek</a>
+        </article>
+        <article class="card service-card">
+          <small>04 / LAYANAN</small><h3>[Layanan Konsultasi]</h3>
+          <p>[Jelaskan format dan tujuan konsultasi.]</p>
+          <a href="#kontak" class="button button-outline">Diskusikan Proyek</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimoni" class="section section-soft" aria-labelledby="testimonials-title">
+      <div class="wrap">
+        <p class="eyebrow">05 / BUKTI SOSIAL</p>
+        <h2 id="testimonials-title">Suara dari kolaborasi.</h2>
+        <p>Contoh format berikut bukan testimoni asli. Ganti setelah mendapat izin pemberi kutipan.</p>
+        <div class="quote-grid">
+          <blockquote class="card quote">
+            <p>“[Kutipan asli dari kolaborator pertama.]”</p>
+            <footer>[Nama Placeholder] · [Jabatan Placeholder]</footer>
+          </blockquote>
+          <blockquote class="card quote">
+            <p>“[Kutipan asli tentang proses kolaborasi.]”</p>
+            <footer>[Nama Placeholder] · [Jabatan Placeholder]</footer>
+          </blockquote>
+          <blockquote class="card quote">
+            <p>“[Kutipan asli tentang hasil pekerjaan.]”</p>
+            <footer>[Nama Placeholder] · [Jabatan Placeholder]</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="section wrap split" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">06 / KONTAK</p>
+        <h2 id="contact-title">Mari mulai percakapan.</h2>
+        <p>Ganti semua placeholder kontak berikut sebelum menerbitkan halaman.</p>
+        <div class="rule-block">
+          <h3>Email</h3>
+          <p>[EMAIL_ANDA]</p>
+        </div>
+        <div class="rule-block">
+          <h3>WhatsApp</h3>
+          <p>[NOMOR_WHATSAPP_ANDA]</p>
+        </div>
+        <div class="rule-block">
+          <h3>Profil sosial</h3>
+          <p>[URL_LINKEDIN_ANDA] · [URL_GITHUB_ANDA] · [URL_INSTAGRAM_ANDA]</p>
+        </div>
+      </div>
+      <div class="card contact-card">
+        <h3>Tulis pesan</h3>
+        <p>Formulir contoh ini memvalidasi isian saja; tidak mengirim atau menyimpan pesan.</p>
+        <form id="contact-form" novalidate>
+          <label for="nama">Nama</label>
+          <input id="nama" name="nama" autocomplete="name" maxlength="120" required placeholder="Nama Anda">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="200" required placeholder="nama@contoh.com">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" maxlength="5000" required placeholder="Tulis pesan Anda"></textarea>
+          <button class="button button-primary" type="submit">Periksa Pesan</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>© <span id="year"></span> [Nama Lengkap]. Semua hak dilindungi.</p>
+      <a href="#beranda">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+
+  <div id="case-modal" class="modal-backdrop" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true"
+      aria-label="Studi kasus proyek" tabindex="-1">
+      <button id="modal-close" class="button button-outline modal-close"
+        type="button">Tutup ×</button>
+      <div id="case-1" class="case-detail" hidden>
+        <p class="eyebrow">STUDI KASUS 01 · IDENTITAS</p>
+        <h2>[Proyek Identitas Editorial]</h2>
+        <p><strong>Peran:</strong> [Peran Anda]</p>
+        <p><strong>Proses:</strong> [Riset visual dan sistem identitas yang benar-benar Anda kerjakan.]</p>
+        <p><strong>Hasil:</strong> [Hasil yang dapat diverifikasi.]</p>
+      </div>
+      <div id="case-2" class="case-detail" hidden>
+        <p class="eyebrow">STUDI KASUS 02 · DIGITAL</p>
+        <h2>[Proyek Pengalaman Digital]</h2>
+        <p><strong>Peran:</strong> [Peran Anda]</p>
+        <p><strong>Proses:</strong> [Riset dan perancangan pengalaman yang Anda lakukan.]</p>
+        <p><strong>Hasil:</strong> [Temuan atau dampak terverifikasi.]</p>
+      </div>
+      <div id="case-3" class="case-detail" hidden>
+        <p class="eyebrow">STUDI KASUS 03 · IDENTITAS</p>
+        <h2>[Proyek Desain Kemasan]</h2>
+        <p><strong>Peran:</strong> [Peran Anda]</p>
+        <p><strong>Proses:</strong> [Pengembangan konsep dan penerapan kemasan.]</p>
+        <p><strong>Hasil:</strong> [Hasil akhir yang benar-benar ada.]</p>
+      </div>
+      <div id="case-4" class="case-detail" hidden>
+        <p class="eyebrow">STUDI KASUS 04 · STRATEGI</p>
+        <h2>[Proyek Strategi Kreatif]</h2>
+        <p><strong>Peran:</strong> [Peran Anda]</p>
+        <p><strong>Proses:</strong> [Pemetaan kebutuhan dan rekomendasi strategi.]</p>
+        <p><strong>Hasil:</strong> [Keputusan dan dampak terverifikasi.]</p>
+      </div>
+      <div id="case-5" class="case-detail" hidden>
+        <p class="eyebrow">STUDI KASUS 05 · DIGITAL</p>
+        <h2>[Proyek Kampanye Digital]</h2>
+        <p><strong>Peran:</strong> [Peran Anda]</p>
+        <p><strong>Proses:</strong> [Konsep kampanye dan produksi aset.]</p>
+        <p><strong>Hasil:</strong> [Hasil yang tercatat, bila tersedia.]</p>
+      </div>
+      <div id="case-6" class="case-detail" hidden>
+        <p class="eyebrow">STUDI KASUS 06 · STRATEGI</p>
+        <h2>[Proyek Konsultasi Konsep]</h2>
+        <p><strong>Peran:</strong> [Peran Anda]</p>
+        <p><strong>Proses:</strong> [Analisis dan sesi konsultasi yang dilakukan.]</p>
+        <p><strong>Hasil:</strong> [Rekomendasi akhir yang dapat diverifikasi.]</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Handler Pengalihan Otomatis Netlify Identity saat Membuka Link Verifikasi Admin -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>
