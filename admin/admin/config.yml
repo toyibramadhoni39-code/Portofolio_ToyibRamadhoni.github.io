@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main # Sesuaikan dengan nama branch utama kamu (main atau master)
+
+media_folder: "images/uploads" # Tempat foto yang diupload tersimpan di GitHub
+public_folder: "/images/uploads" # Path foto untuk diakses di web
+
+collections:
+  - name: "portofolio"
+    label: "Pengalaman & Proyek"
+    folder: "content/proyek"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Judul Proyek", name: "title", widget: "string"}
+      - {label: "Tanggal", name: "date", widget: "datetime"}
+      - {label: "Foto Proyek", name: "image", widget: "image"}
+      - {label: "Deskripsi", name: "body", widget: "markdown"}
